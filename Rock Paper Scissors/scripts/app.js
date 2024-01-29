@@ -83,7 +83,31 @@ function userPlay(userchoice) {
 
     }
 
+}
 
 
+let isAutoPlaying=false;
+autoPlayButton = document.getElementById('autoplay-button')
+let intervalID;
 
+function autoplay() {
+    if(!isAutoPlaying){
+        autoPlayButton.innerHTML = 'Stop';
+        intervalID = setInterval(function(){userPlay(randomChoice())},1000);
+        isAutoPlaying = true;
+    }
+    else {
+        isAutoPlaying = false;
+        autoPlayButton.innerHTML = 'Autoplay';
+        clearInterval(intervalID);
+    }
+}
+
+function reset() {
+    wins=0;
+    losses=0;
+    draws=0;
+    winsComp.innerHTML = 0;
+    lossesComp.innerHTML = 0;
+    drawsComp.innerHTML = 0;
 }

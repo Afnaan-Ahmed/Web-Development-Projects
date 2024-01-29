@@ -36,7 +36,17 @@ p {
     opacity: 0.5;
 }
 
+#autoplay-button,#reset-button {
+    padding: 14px;
+    font-size: 22px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: grey;
+    color: gold;
+    font-weight: bold;
 
+}
 
 .choice-container{
     display: flex;

@@ -12,13 +12,15 @@
     <button onclick="userPlay('rock')" class="action-button">✊</button>
     <button onclick="userPlay('paper')" class="action-button">🖐</button>
     <button onclick="userPlay('scissors')" class="action-button">✌</button>
-    
-    <br><br>
+    <br>
+    <button id="autoplay-button" onclick="autoplay()">Autoplay</button>
+    <button id="reset-button" onclick="reset()">Reset</button>
+    <br>
     <p>Wins : <span id="wins">0</span></p>
     <p>Losses : <span id="losses">0</span></p>
     <p>Draws : <span id="draws">0</span></p>
     <p id="banner">You haven't played yet</p>
-    <br><br><hr>
+    <hr>
     <div class="choice-container">
         <div class="choice">
             <button id="user-choice" class="action-button">✌</button>

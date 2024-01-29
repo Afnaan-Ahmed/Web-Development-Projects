@@ -8,6 +8,11 @@ hr {
 p {
     font-size: 28px;
 }
+
+#banner {
+    font-size: 40px;
+}
+
 .heading {
     padding: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

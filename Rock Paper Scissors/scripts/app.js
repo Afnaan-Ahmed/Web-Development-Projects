@@ -110,4 +110,5 @@ function reset() {
     winsComp.innerHTML = 0;
     lossesComp.innerHTML = 0;
     drawsComp.innerHTML = 0;
+    banner.innerHTML = "Good Luck!";
 }
